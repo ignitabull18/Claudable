@@ -16,7 +16,8 @@
     "setup": "npm install",
     "clean": "node scripts/clean.js",
     "db:reset": "node scripts/reset-db.js",
-    "db:backup": "node scripts/backup-db.js"
+    "db:backup": "node scripts/backup-db.js",
+    "start": "cd apps/web && npm start"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
