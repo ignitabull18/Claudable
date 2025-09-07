@@ -1,0 +1,42 @@
+# Ignore Git-related files
+.git
+.gitignore
+
+# Ignore Node.js modules
+node_modules
+apps/*/node_modules
+
+# Ignore Python virtual environment
+.venv
+apps/api/.venv
+
+# Ignore build artifacts
+build
+dist
+.next
+apps/web/.next
+
+# Ignore local environment files
+.env
+.env.*.local
+.env.coolify.example
+
+# Ignore logs and temporary files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+*.tmp
+
+# Ignore IDE and editor configuration files
+.vscode
+.idea
+*.swp
+*.swo
+
+# Ignore database files (if local SQLite)
+data/*.db
+data/backups/
+
+# Ignore scripts that are not part of the app runtime
+scripts/
