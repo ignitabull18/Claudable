@@ -17,7 +17,7 @@
     "clean": "node scripts/clean.js",
     "db:reset": "node scripts/reset-db.js",
     "db:backup": "node scripts/backup-db.js",
-    "start": "cd apps/web && npm run build && npm start"
+    "start": "cd apps/web && npm run build && PORT=3000 HOSTNAME=0.0.0.0 npm start"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
