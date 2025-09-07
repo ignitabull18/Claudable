@@ -150,6 +150,12 @@ function setupWithPip() {
 
 // Main setup function
 function setup() {
+  // Check if Python setup should be skipped
+  if (process.env.SKIP_PYTHON_SETUP === 'true' || process.env.SKIP_VENV_SETUP === 'true') {
+    console.log('Skipping Python virtual environment setup (SKIP_PYTHON_SETUP/SKIP_VENV_SETUP is set)');
+    return;
+  }
+  
   if (hasUv()) {
     setupWithUv();
   } else {
