@@ -39,4 +39,12 @@ data/*.db
 data/backups/
 
 # Ignore scripts that are not part of the app runtime
-scripts/
+# Note: We need scripts/setup-env.js and scripts/setup-venv.js for the build process
+scripts/backup-db.js
+scripts/clean.js
+scripts/reset-db.js
+scripts/run-api.js
+scripts/run-web.js
+scripts/settings.json
+scripts/test-coolify-deployment.sh
+scripts/type_check.sh
